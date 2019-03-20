@@ -13,6 +13,10 @@
   --white-color: #ffffff;
   --grey_color: #999999;
 
+  --real_red_color:#6c2c3a;
+  --rich_razzleberry_color:#954567;
+  --targerino-tango_color: #faddd5;
+
 }
 
 * {
@@ -20,12 +24,13 @@
   margin: 0;
 }
 
-a {
-  color: white;
-}
+
 
 .top_block {
+  a {
+    color: white;
 
+  }
   color: var(--white-color);
   background: url("../images/fon.png") no-repeat center;
   background-size: cover;
@@ -39,6 +44,7 @@ a {
         a {
           padding: 10px 0 13px 0;
           margin-left: 22px;
+
 
           &:hover {
             background: transparent;
@@ -109,20 +115,20 @@ a {
           padding: 20px 28px;
           text-transform: uppercase;
           color: var(--white-color);
-          background-color:var(--blue_color);
+          background-color: var(--blue_color);
           border-radius: 5px;
           margin-bottom: 20px;
           margin-right: 20px;
-          &:hover{
+          &:hover {
             background-color: transparent;
             border: solid 1px var(--grey_color);
             transition: 1s;
           }
-          &:nth-of-type(2){
-            
+          &:nth-of-type(2) {
+
             background-color: transparent;
             border: solid 1px var(--grey_color);
-            &:hover{
+            &:hover {
               transition: 1s;
               background-color: var(--blue_color);
               border: solid 1px transparent;
@@ -141,6 +147,80 @@ a {
     }
   }
 
+}
+
+.active {
+  a {
+    color: var(targerino-tango_color);
+
+  }
+  .top_block {
+
+    nav {
+      color: var(--real_red_color);
+      ul {
+        li {
+          a {
+            &:hover {
+              &:after {
+                background-color: var(--real_red_color);
+              }
+              &:before {
+                background-color: var(--real_red_color);
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+    .container {
+      .row {
+        .col-md-7 {
+          h3 {
+            color: var(--real_red_color);
+          }
+          h1 {
+
+
+            color: var(--targerino-tango_color);
+
+          }
+          p {
+
+            color: var(--rich_razzleberry_color);
+
+          }
+          a {
+
+            color: var(--targerino-tango_color);
+            background-color: var(--real_red_color);
+
+            &:hover {
+              background-color: transparent;
+              border: solid 1px var(--rich_razzleberry_color);
+
+            }
+            &:nth-of-type(2) {
+
+              background-color: transparent;
+              border: solid 1px var(--rich_razzleberry_color);
+              &:hover {
+
+                background-color: var(--real_red_color);
+                border: solid 1px transparent;
+              }
+
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
 }
 
 .navbar {
