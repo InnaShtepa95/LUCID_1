@@ -18,7 +18,9 @@
   --targerino-tango_color: #faddd5;
 
   --tab_bg_color: #e7cfa6;
-  --tab-text-color:#e5e5e5;
+  --tab-text-color: #e5e5e5;
+  --input_form_bg1: #f6f6f6;
+  --input_form_bg2: #fbf7f1;
 
 }
 
@@ -296,55 +298,72 @@ a:focus {
 #myModal {
   .modal-dialog {
     width: 100%;
+
     max-width: 1170px;
   }
   .modal-content {
     .modal-body {
       padding: 0;
       .container {
+
+
         .row {
+
           .col-sm-6 {
+            padding-top: 200px;
             &:first-of-type {
               background-image: url("../images/backg_people.png");
-              background-size: cover;
-              background-position: bottom center;
+              background-size: contain;
+              background-position: bottom ;
               background-color: #eeeae3;
+              padding-bottom: 150px;
+              .left_modal {
+                max-width: 450px;
+                margin: auto;
+                form {
 
-              form {
-                text-transform: uppercase;
-                padding: 180px 74px;
-                font-family: 'Montserrat', sans-serif;
-                h4 {
+                  text-transform: uppercase;
 
-                  font-size: 11.76px;
-
-                }
-                h3 {
                   font-family: 'Montserrat', sans-serif;
-                  font-size: 11.76px;
-                  &:after {
-                    margin-top: 30px;
-                    clear: both;
-                    display: block;
-                    content: "";
-                    border-bottom: solid 1px black;
-                    width: 100px;
-                  }
-                }
-                .form-group {
-                  label {
-                    font-size: 11px;
-                    font-weight: normal;
+
+                  h4 {
+
+                    font-size: 11.76px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
 
                   }
+                  h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 11.76px;
+                    &:after {
+                      margin-top: 23px;
+                      clear: both;
+                      display: block;
+                      content: "";
+                      border-bottom: solid 1px black;
+                      width: 100px;
+                      margin-bottom: 33px;
+                    }
+                    .buttons {
 
+                    }
+                  }
+                  .form-group {
+                    label {
+                      font-size: 11px;
+                      font-weight: normal;
+
+                    }
+
+                  }
                 }
               }
               .row {
                 .col-sm-6 {
                   padding-top: 45px;
                   button {
-
+                    text-transform: uppercase;
                     background: #e7cfa6;
                     border-radius: 20px;
                     height: 37px;
@@ -360,10 +379,59 @@ a:focus {
 
             }
             .right_modal {
+              font-family: 'Montserrat', sans-serif;
+              max-width: 450px;
+              margin: auto;
+
+              .h4_mons {
+                font-size: 11.76px;
+                font-weight: bold;
+                margin-bottom: 30px;
+
+              }
               .nav-tabs {
                 border: none !important;
                 li {
 
+                }
+              }
+              .tab-content {
+                .tab-pane {
+                  .tab_panel_content {
+                    button {
+                      margin-top: 40px;
+
+                      background: #e7cfa6;
+                      border-radius: 20px;
+                      height: 37px;
+                      width: 190px;
+                      text-transform: uppercase;
+                    }
+                    margin-top: 30px;
+                    .form-group {
+                      &:nth-of-type(4) {
+                        input {
+                          background-color: var(--input_form_bg2);
+                        }
+                      }
+                      &:nth-of-type(3) {
+                        input {
+                          background-color: var(--input_form_bg2);
+                        }
+                      }
+                      font-family: 'Montserrat', sans-serif;
+                      label {
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: normal;
+
+                      }
+                      input {
+                        background-color: var(--input_form_bg1);
+
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -376,6 +444,13 @@ a:focus {
   }
 }
 
+.form-control {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+
+}
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   border: solid 1px transparent !important;
   color: var(--white-color);
@@ -386,7 +461,7 @@ a:focus {
   background-color: var(--tab_bg_color) !important;
   color: var(--white-color);
   margin-left: 20px;
-font-size: 11.76px;
+  font-size: 11.76px;
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
@@ -420,5 +495,8 @@ font-size: 11.76px;
   background-color: transparent;
   border-radius: 0;
   margin-left: 20px;
+  &:hover {
+    background-color: transparent;
 
+  }
 }

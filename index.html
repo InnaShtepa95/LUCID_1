@@ -41,43 +41,77 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <form action="" method="">
-                                <h4>existing users</h4>
-                                <h3>login</h3>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Username</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                           placeholder="">
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-default">Login</button>
+                            <div class="left_modal">
+                                <form action="" method="">
+                                    <h4 class="h4_mons">existing users</h4>
+                                    <h3>login</h3>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Username</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
                                     </div>
-                                    <div class="col-sm-6"><a href="#">Forgot password</a></div>
-                                </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="">
+                                    </div>
 
-                            </form>
+                                    <div class="row">
 
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-default">Login</button>
+                                        </div>
+                                        <div class="col-sm-6"><a href="#">Forgot password?</a></div>
+
+                                    </div>
+                                </form>
+                            </div>
                         </div>
+
                         <div class="col-sm-6">
                             <div class="right_modal">
+                                <h4 class="h4_mons">NEW USERS, WELCOME!</h4>
 
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign up</a></li>
-                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">billing info</a></li>
-                                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">payment</a></li>
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home"
+                                                                              role="tab" data-toggle="tab">Sign up</a>
+                                    </li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                                               data-toggle="tab">billing info</a></li>
+                                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                               data-toggle="tab">payment</a></li>
 
                                 </ul>
 
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <form action="" method="" class="tab_panel_content">
+
+                                            <div class="form-group">
+                                                <label for="username">Username</label>
+                                                <input type="text" class="form-control" id="username" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email address</label>
+                                                <input type="email" class="form-control" id="email"
+                                                       placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" id="password"
+                                                       placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="re-password">re-enter password</label>
+                                                <input type="password" class="form-control" id="re-password"
+                                                       placeholder="">
+                                            </div>
+                                            <button type="submit" class="btn btn-default">next step</button>
+
+
+                                        </form>
+                                    </div>
                                     <div role="tabpanel" class="tab-pane" id="profile">...</div>
                                     <div role="tabpanel" class="tab-pane" id="messages">...</div>
 
