@@ -188,87 +188,111 @@ a:focus {
     background-color: white; }
 
 /************************************/
-#myModal .modal-dialog {
-  width: 100%;
-  max-width: 1170px; }
-#myModal .modal-content .modal-body {
-  padding: 0; }
-  #myModal .modal-content .modal-body .container .row .col-sm-6 {
-    padding-top: 200px; }
-    #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type {
-      background-image: url("../images/backg_people.png");
-      background-size: contain;
-      background-position: bottom;
-      background-color: #eeeae3;
-      padding-bottom: 150px; }
-      #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal {
+#myModal {
+  padding-left: 0; }
+  #myModal .modal-dialog {
+    width: 100%;
+    max-width: 1170px; }
+    @media screen and (max-width: 1199px) {
+      #myModal .modal-dialog {
+        max-width: 970px; } }
+    @media screen and (max-width: 992px) {
+      #myModal .modal-dialog {
+        max-width: 750px; } }
+    @media screen and (max-width: 767px) {
+      #myModal .modal-dialog {
+        max-width: 500px;
+        width: 75%;
+        margin: auto; } }
+  #myModal .modal-content .modal-body {
+    padding: 0; }
+    #myModal .modal-content .modal-body .container .row .col-sm-6 {
+      padding-top: 200px; }
+      @media screen and (max-width: 768px) {
+        #myModal .modal-content .modal-body .container .row .col-sm-6 {
+          padding-top: 50px; } }
+      #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type {
+        background-image: url("../images/backg_people.png");
+        background-size: contain;
+        background-position: bottom;
+        background-color: #eeeae3;
+        padding-bottom: 150px; }
+        @media screen and (max-width: 768px) {
+          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type {
+            padding-bottom: 50px; } }
+        #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal {
+          max-width: 450px;
+          margin: auto; }
+          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form {
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif; }
+            #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h4 {
+              font-size: 11.76px;
+              font-weight: bold;
+              margin-bottom: 30px; }
+            #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h3 {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 11.76px; }
+              #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h3:after {
+                margin-top: 23px;
+                clear: both;
+                display: block;
+                content: "";
+                border-bottom: solid 1px black;
+                width: 100px;
+                margin-bottom: 33px; }
+            #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form .form-group label {
+              font-size: 11px;
+              font-weight: normal; }
+        #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 {
+          padding-top: 45px; }
+          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 button {
+            font-size: 11.76px;
+            text-transform: uppercase;
+            background: #e7cfa6;
+            border-radius: 20px;
+            height: 37px;
+            width: 190px; }
+            @media screen and (max-width: 992px) {
+              #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 button {
+                width: 100px; } }
+          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 a {
+            padding-top: 15px;
+            line-height: 35px;
+            color: black;
+            font-size: 11.76px; }
+      #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal {
+        font-family: 'Montserrat', sans-serif;
         max-width: 450px;
         margin: auto; }
-        #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form {
-          text-transform: uppercase;
-          font-family: 'Montserrat', sans-serif; }
-          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h4 {
-            font-size: 11.76px;
-            font-weight: bold;
-            margin-bottom: 30px; }
-          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 11.76px; }
-            #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form h3:after {
-              margin-top: 23px;
-              clear: both;
-              display: block;
-              content: "";
-              border-bottom: solid 1px black;
-              width: 100px;
-              margin-bottom: 33px; }
-          #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .left_modal form .form-group label {
-            font-size: 11px;
-            font-weight: normal; }
-      #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 {
-        padding-top: 45px; }
-        #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 button {
-          text-transform: uppercase;
-          background: #e7cfa6;
-          border-radius: 20px;
-          height: 37px;
-          width: 190px; }
-        #myModal .modal-content .modal-body .container .row .col-sm-6:first-of-type .row .col-sm-6 a {
-          padding-top: 15px;
-          line-height: 35px;
-          color: black; }
-    #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal {
-      font-family: 'Montserrat', sans-serif;
-      max-width: 450px;
-      margin: auto; }
-      #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .h4_mons {
-        font-size: 11.76px;
-        font-weight: bold;
-        margin-bottom: 30px; }
-      #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .nav-tabs {
-        border: none !important; }
-      #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content {
-        margin-top: 30px; }
-        #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content button {
-          margin-top: 40px;
-          margin-bottom: 30px;
-          background: #e7cfa6;
-          border-radius: 20px;
-          height: 37px;
-          width: 190px;
-          text-transform: uppercase; }
-        #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group {
-          font-family: 'Montserrat', sans-serif; }
-          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group:nth-of-type(4) input {
-            background-color: var(--input_form_bg2); }
-          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group:nth-of-type(3) input {
-            background-color: var(--input_form_bg2); }
-          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group label {
-            text-transform: uppercase;
-            font-size: 11px;
-            font-weight: normal; }
-          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group input {
-            background-color: var(--input_form_bg1); }
+        #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .h4_mons {
+          font-size: 11.76px;
+          font-weight: bold;
+          margin-bottom: 30px; }
+        #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .nav-tabs {
+          border: none !important; }
+        #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content {
+          margin-top: 30px; }
+          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content button {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            background: #e7cfa6;
+            border-radius: 20px;
+            height: 37px;
+            width: 190px;
+            text-transform: uppercase; }
+          #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group {
+            font-family: 'Montserrat', sans-serif; }
+            #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group:nth-of-type(4) input {
+              background-color: var(--input_form_bg2); }
+            #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group:nth-of-type(3) input {
+              background-color: var(--input_form_bg2); }
+            #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group label {
+              text-transform: uppercase;
+              font-size: 11px;
+              font-weight: normal; }
+            #myModal .modal-content .modal-body .container .row .col-sm-6 .right_modal .tab-content .tab-pane .tab_panel_content .form-group input {
+              background-color: var(--input_form_bg1); }
 
 .form-control {
   border-radius: 0;
@@ -313,15 +337,17 @@ a:focus {
   color: var(--tab-text-color);
   background-color: transparent;
   border-radius: 0;
-  margin-left: 20px; }
+  margin-left: 0px;
+  margin-right: 20px; }
+  @media screen and (max-width: 466px) {
+    .nav-tabs > li > a {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-right: 5px; } }
   .nav-tabs > li > a:hover {
     background-color: transparent; }
 
-.nav-tabs > li > a {
-  margin-left: 0px;
-  margin-right: 20px; }
-
-/**************************************/
+/******************ANIMATION BLOCK********************/
 .move_block {
   width: 20px;
   height: 20px;
